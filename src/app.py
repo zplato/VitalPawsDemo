@@ -1,3 +1,4 @@
+from random import random
 from flask import Flask
 
 app = Flask(__name__)
@@ -5,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def process_data():
-
-    return "HELLO WORLD"
+    respirations = str(random.randint(10, 50))
+    return "Respiratory Rate: {0}".format(respirations)
 
 
 def main():
