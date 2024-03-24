@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def process_data():
-    print("HELLO WORLD!")
+
+    return "HELLO WORLD"
 
 
 def main():
