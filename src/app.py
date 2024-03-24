@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def process_data():
     respirations = str(random.randint(10, 50))
+    print("HELLO WORLD")
     return "Respiratory Rate: {0}".format(respirations)
 
 
